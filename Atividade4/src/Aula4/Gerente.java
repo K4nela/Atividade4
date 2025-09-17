@@ -1,5 +1,4 @@
 package Aula4;
-
 import java.util.ArrayList;
 
 public class Gerente extends Funcionario{
@@ -11,6 +10,7 @@ public class Gerente extends Funcionario{
         super(no, id, cpf, ca, daAd, sa);
         this.equipe = eq;
         this.bonus = 0.20;
+        this.listaEquipe = new ArrayList<>();
     }
 
     public double getBonus() {
@@ -37,6 +37,7 @@ public class Gerente extends Funcionario{
 
     public void gerenciarEquipe(Funcionario F){
         listaEquipe.add(F);
+        System.out.println(" ");
         System.out.println(F.getNome() + " agora faz parte da equipe do gerente " + getNome());
     }
 
