@@ -4,6 +4,9 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args){
-        ArrayList<InstrumentoMusical> banda = new ArrayList<>();
+        InstrumentoMusical[] banda = new InstrumentoMusical[5];
+
+banda = new Violão ();
+
     }
 }
