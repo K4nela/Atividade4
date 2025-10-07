@@ -8,6 +8,12 @@ public class Violao extends InstrumentoMusical {
         this.cordas = cordas;
     }
 
+      @Override
+    public void info() {
+        super.info();
+        System.out.println("Tem " + getCordas() + " cordas");
+    }
+
     @Override
     public void afinar() {
         super.afinar();

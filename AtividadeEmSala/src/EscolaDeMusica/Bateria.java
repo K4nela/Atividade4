@@ -7,6 +7,13 @@ public class Bateria extends InstrumentoMusical{
         super(nome, material);
         this.numeroDePecas = numeroDePecas;
     }
+    
+      @Override
+    public void info() {
+        super.info();
+        System.out.println("Tem " + getNumetoDePecas() + " peças");
+    }
+
 
     @Override
     public void afinar() {
