@@ -1,8 +1,5 @@
 package EscolaDeMusica;
 
-//do - re - mi - fa - so - la - si - do
-// 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8
-
 import java.lang.constant.Constable;
 
 public abstract class InstrumentoMusical {
@@ -39,6 +36,6 @@ public abstract class InstrumentoMusical {
     }
 
     public void afinar(){
-        System.out.println("Afinando " + getNome());
+        System.out.println("Afinando instrumento" + getNome());
     }
     }

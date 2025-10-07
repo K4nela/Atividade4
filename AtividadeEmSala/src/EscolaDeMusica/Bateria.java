@@ -10,11 +10,13 @@ public class Bateria extends InstrumentoMusical{
 
     @Override
     public void afinar() {
+        super.afinar();
         System.out.println("Ajustando tensão dos tambores");
     }
 
     @Override
     public void tocar() {
+        super.tocar();
         System.out.println("Boom! Tuts Tuts!");
     }
 

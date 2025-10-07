@@ -10,11 +10,13 @@ public class Piano extends InstrumentoMusical{
 
     @Override
     public void tocar() {
+        super.tocar();
         System.out.println("Plim! Plim! Plom!");
     }
 
     @Override
     public void afinar() {
+        super.afinar();
         System.out.println("Ajustando as cordas e martelos do piano");
     }
 

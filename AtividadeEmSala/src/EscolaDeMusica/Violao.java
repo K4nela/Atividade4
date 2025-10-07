@@ -10,14 +10,16 @@ public class Violao extends InstrumentoMusical {
 
     @Override
     public void afinar() {
+        super.afinar();
         System.out.println("Ajustando a tensão das cordas violão");
     }
 
     @Override
     public void tocar() {
+        super.tocar();
         System.out.println("Brooommm!");
     }
-
+    
     public int getCordas() {
         return cordas;
     }
