@@ -6,10 +6,6 @@ public class Saxofone extends InstrumentoMusical{
         super(nome, material);
     }
 
-    public void info(){
-        System.out.println("O Saxofone é de " + getMaterial());
-    }
-
     @Override
     public void afinar() {
         System.out.println("Assoprando saxofone");

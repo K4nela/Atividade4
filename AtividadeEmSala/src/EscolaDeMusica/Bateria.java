@@ -8,10 +8,6 @@ public class Bateria extends InstrumentoMusical{
         this.numeroDePecas = numeroDePecas;
     }
 
-    public void info(){
-        System.out.println("A bateria tem " + getNumetoDePecas() + " peças");
-    }
-
     @Override
     public void afinar() {
         System.out.println("Ajustando tensão dos tambores");

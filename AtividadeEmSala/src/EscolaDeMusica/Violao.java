@@ -8,10 +8,6 @@ public class Violao extends InstrumentoMusical {
         this.cordas = cordas;
     }
 
-    public void mostraraInfos(){
-           System.out.println("O violão tem " + getCordas() + " cordas");
-       }
-
     @Override
     public void afinar() {
         System.out.println("Ajustando a tensão das cordas violão");
@@ -29,4 +25,5 @@ public class Violao extends InstrumentoMusical {
     public void setCordas(int cordas) {
         this.cordas = cordas;
     }
+
 }

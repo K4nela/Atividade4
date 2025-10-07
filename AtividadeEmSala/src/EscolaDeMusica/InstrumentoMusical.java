@@ -14,6 +14,10 @@ public abstract class InstrumentoMusical {
         this.material = material;
     }
 
+    public void info(){
+        System.out.println("O " + getNome() + " é de " + getMaterial());
+    }
+
     public String getNome() {
         return nome;
     }

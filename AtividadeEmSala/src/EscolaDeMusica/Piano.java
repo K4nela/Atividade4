@@ -8,10 +8,6 @@ public class Piano extends InstrumentoMusical{
         this.numeroTeclas = numeroTeclas;
     }
 
-    public void info(){
-        System.out.println("O piano tem " + getNumeroTeclas() + " teclas");
-    }
-
     @Override
     public void tocar() {
         System.out.println("Plim! Plim! Plom!");
