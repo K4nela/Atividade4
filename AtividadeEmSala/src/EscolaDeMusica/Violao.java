@@ -1,27 +1,32 @@
 package EscolaDeMusica;
 
 public class Violao extends InstrumentoMusical {
-       private String material;
+    private int cordas;
 
-       public void mostraraInfos(){
-           System.out.println("O violão é de " + getMaterial());
+    public Violao(String nome, String material, int cordas) {
+        super(nome, material);
+        this.cordas = cordas;
+    }
+
+    public void mostraraInfos(){
+           System.out.println("O violão tem " + getCordas() + " cordas");
        }
 
     @Override
     public void afinar() {
-        System.out.println("Modificando a tensão das cordas violão");
+        System.out.println("Ajustando a tensão das cordas violão");
     }
 
     @Override
     public void tocar() {
-        System.out.println("Tocando violão");
+        System.out.println("Brooommm!");
     }
 
-    public String getMaterial() {
-        return material;
+    public int getCordas() {
+        return cordas;
     }
 
-    public void setMaterial(String material) {
-        this.material = material;
+    public void setCordas(int cordas) {
+        this.cordas = cordas;
     }
 }

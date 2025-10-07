@@ -1,23 +1,23 @@
 package EscolaDeMusica;
 
 public class Saxofone extends InstrumentoMusical{
-    private String material;
+
+    public Saxofone(String nome, String material) {
+        super(nome, material);
+    }
+
+    public void info(){
+        System.out.println("O Saxofone é de " + getMaterial());
+    }
 
     @Override
     public void afinar() {
-        System.out.println("Afinando saxofone");
+        System.out.println("Assoprando saxofone");
     }
 
     @Override
     public void tocar(){
-        System.out.println("Tocando saxofone");
+        System.out.println("Fluuuuu!");
     }
 
-    public String getSax() {
-        return material;
-    }
-
-    public void setSax(String sax) {
-        this.material = sax;
-    }
 }

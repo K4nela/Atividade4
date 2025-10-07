@@ -3,13 +3,38 @@ package EscolaDeMusica;
 //do - re - mi - fa - so - la - si - do
 // 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8
 
+import java.lang.constant.Constable;
+
 public abstract class InstrumentoMusical {
+    protected String nome;
+    protected String material;
+
+    public InstrumentoMusical(String nome, String material){
+        this.nome = nome;
+        this.material = material;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getMaterial() {
+        return material;
+    }
+
+    public void setMaterial(String material) {
+        this.material = material;
+    }
 
     public void tocar(){
-        System.out.println("Tocando nota do instrumento");
+        System.out.println("Tocando instrumento " + getNome());
     }
 
     public void afinar(){
-        System.out.println("Afinando instrumento");
+        System.out.println("Afinando " + getNome());
     }
     }
